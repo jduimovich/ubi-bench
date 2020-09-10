@@ -12,7 +12,6 @@ docker images | grep standard
 echo "Standard Image running ubi based on registry.access.redhat.com/ubi7/ubi"
 
 rm -f out.txt
-touch out.txt
 for i in {1..10}
 do 
     { time docker run --rm standard > /dev/null ; } 2> out.txt
