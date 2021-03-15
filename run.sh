@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo "Building Images"
 
 docker build -t ubi-standard.ubi7  --build-arg VER=7 --build-arg SIZE= .
